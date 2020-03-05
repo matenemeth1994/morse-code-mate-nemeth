@@ -1,18 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 h1 {
   padding: 30px;
 }
-
 .outside {
   margin: 10% auto;
-  width: 60%;
+  max-width: 50%;
   height: 50%;
+  border: 3px solid #73ad21;
   padding: 10px;
   text-align: center;
   padding: 20px;
@@ -34,4 +32,3 @@ p {
   margin: 40px 2px;
   cursor: pointer;
 }
-/*# sourceMappingURL=solution.css.map */
