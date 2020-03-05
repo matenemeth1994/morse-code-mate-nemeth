@@ -37,30 +37,39 @@ const alphabet = {
   z: "--..",
   " ": " "
 };
-// input, output
-const input = document.getElementById("text");
-const inputValue = input.value;
-const output = document.getElementById("result");
-
 // text to morse
 const textToMorse = () => {
+  const input = document.getElementById("text");
+  const inputValue = input.value;
+  const output = document.getElementById("result");
   const inputChar = inputValue.toLowerCase().split("");
   const runInput = inputChar.map(char => alphabet[char]);
   const returnValue = runInput.join(" ");
   output.innerHTML = returnValue;
 };
-
 // morse to text
 const morseToText = () => {
+  const input = document.getElementById("text");
+  const inputValue = input.value;
+  const output = document.getElementById("result");
   const inputChar = inputValue.split(" ");
   const runInput = inputChar.map(getValue);
   const returnValue = runInput.join("");
   output.innerHTML = returnValue;
 };
-
-const translate = () => {};
-document.getElementById("translate").addEventListener("click", translate);
-
+// get the key of the alphabet object
 const getValue = element => {
   return Object.keys(alphabet).find(key => alphabet[key] === element);
 };
+// translate button
+const translate = () => {
+  const input = document.getElementById("text");
+  const inputValue = input.value;
+  if (inputValue.includes(".") || inputValue.includes("-")) {
+    return morseToText();
+  } else {
+    textToMorse();
+  }
+};
+// click event for my button
+document.getElementById("translate").addEventListener("click", translate);
