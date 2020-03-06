@@ -52,9 +52,9 @@ const morseToText = () => {
   const input = document.getElementById("text");
   const inputValue = input.value;
   const output = document.getElementById("result");
-  const inputChar = inputValue.split(" ");
+  const inputChar = inputValue.toLowerCase().split(" ");
   const runInput = inputChar.map(getValue);
-  const returnValue = runInput.join("");
+  const returnValue = runInput.join(" ");
   output.innerHTML = returnValue;
 };
 // get the key of the alphabet object

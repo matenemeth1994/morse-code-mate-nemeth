@@ -7,7 +7,7 @@ h1 {
   padding: 30px;
 }
 .outside {
-  margin: 10% auto;
+  margin: 0 auto;
   max-width: 50%;
   height: 50%;
   border: 3px solid #73ad21;
