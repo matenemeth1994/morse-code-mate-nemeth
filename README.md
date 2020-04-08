@@ -11,3 +11,7 @@ First JavaScript project using an object that contains key-value pairs of letter
 ### How to use 
 1. Clone the repository
 2. Open index.html in live server
+
+### Project Link:
+
+`https://morsecode.matenemeth.co.uk/`
