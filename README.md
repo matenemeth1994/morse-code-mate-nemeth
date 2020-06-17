@@ -7,6 +7,7 @@ First JavaScript project using an object that contains key-value pairs of letter
 * HTML  
 * CSS
 * Javascript
+* Jest
 
 ### How to use 
 1. Clone the repository
