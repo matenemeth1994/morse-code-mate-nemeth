@@ -35,18 +35,20 @@ const alphabet = {
   x: "-..-",
   y: "-.--",
   z: "--..",
-  " ": " "
+  " ": " ",
 };
+
 // text to morse
 const textToMorse = () => {
   const input = document.getElementById("text");
   const inputValue = input.value;
   const output = document.getElementById("result");
   const inputChar = inputValue.toLowerCase().split("");
-  const runInput = inputChar.map(char => alphabet[char]);
+  const runInput = inputChar.map((char) => alphabet[char]);
   const returnValue = runInput.join(" ");
   output.innerHTML = returnValue;
 };
+
 // morse to text
 const morseToText = () => {
   const input = document.getElementById("text");
@@ -57,10 +59,12 @@ const morseToText = () => {
   const returnValue = runInput.join(" ");
   output.innerHTML = returnValue;
 };
+
 // get the key of the alphabet object
-const getValue = element => {
-  return Object.keys(alphabet).find(key => alphabet[key] === element);
+const getValue = (element) => {
+  return Object.keys(alphabet).find((key) => alphabet[key] === element);
 };
+
 // translate button
 const translate = () => {
   const input = document.getElementById("text");
@@ -71,5 +75,13 @@ const translate = () => {
     textToMorse();
   }
 };
-// click event for my button
-document.getElementById("translate").addEventListener("click", translate);
+
+// window.onload = function () {'...eventListener...'}
+// Without using the code snippet above, getElementById executes even berfore DOM fully loaded.
+// Normally this wouldn't cause a problem but doing tests jest considered it as an error even though I didn't even export it.
+
+window.onload = function () {
+  document.getElementById("translate").addEventListener("click", translate);
+};
+
+module.exports = { textToMorse, alphabet, morseToText, getValue, translate };

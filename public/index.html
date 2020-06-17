@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="morse.js" async defer></script>
+    <title>Mate Nemeth Morse Code</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="main.css" />
-  <title>Mate Nemeth Morse Code</title>
-</head>
-
-<body>
-
-  <div class="outside">
-    <h1>Morse Code Translator</h1>
-    <input type="text" id="text" value="" placeholder="Write your text here" />
-    <br>
-    <input type="button" id="translate" value="Translate">
-    <p id="result"></p>
-    <img src="./img/morse.jpg" alt="">
-  </div>
-
-
-  <script src="morse.js" async defer></script>
-</body>
-
+  <body>
+    <div class="outside">
+      <h1 id="header">Morse Code Translator</h1>
+      <input
+        type="text"
+        id="text"
+        value=""
+        placeholder="Write your text here"
+      />
+      <br />
+      <input type="button" id="translate" value="Translate" />
+      <p id="result"></p>
+      <img id ="morse-image" src="./img/morse.jpg" alt="" />
+    </div>
+  </body>
 </html>
