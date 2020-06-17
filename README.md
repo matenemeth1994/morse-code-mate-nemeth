@@ -1,9 +1,9 @@
-# Morse Code Translator | TESTED WITH JEST
+### Morse Code Translator | TESTED WITH JEST
 
-## About
+### About
 First JavaScript project using an object that contains key-value pairs of letters and morse letters.
 
-## Built With
+### Built With
 * HTML  
 * CSS
 * Javascript
