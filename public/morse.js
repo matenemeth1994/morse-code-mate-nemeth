@@ -75,13 +75,8 @@ const translate = () => {
     textToMorse();
   }
 };
-
-// window.onload = function () {'...eventListener...'}
-// Without using the code snippet above, getElementById executes even berfore DOM fully loaded.
-// Normally this wouldn't cause a problem but doing tests jest considered it as an error even though I didn't even export it.
-
-window.onload = function () {
-  document.getElementById("translate").addEventListener("click", translate);
-};
-
-module.exports = { textToMorse, alphabet, morseToText, getValue, translate };
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+document.getElementById("translate").addEventListener("click", translate);
