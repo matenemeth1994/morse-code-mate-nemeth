@@ -1,4 +1,4 @@
-### Morse Code Translator | TESTED WITH JEST
+### Morse Code Translator
 
 ### About
 First JavaScript project using an object that contains key-value pairs of letters and morse letters.
@@ -7,12 +7,11 @@ First JavaScript project using an object that contains key-value pairs of letter
 * HTML  
 * CSS
 * Javascript
-* Jest
+* Bootstrap
 
 ### How to use 
 1. Clone the repository
 2. Open index.html in live server
-3. For run test: `npm test`
 
 ### Project Link:
 
